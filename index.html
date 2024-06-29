@@ -13,10 +13,10 @@
       crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Index Page</title>
+    <title>Index</title>
   </head>
   <body>
-    <!-- Navigation bar --> 
+    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="index.html">Collaboration Project</a>
@@ -28,53 +28,75 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">GitHub</a>
-            </li>
           </ul>
           <ul class="navbar-nav d-flex">
               <li class="nav-item">
-                  <a class="nav-link" href="login.html">Login</a>
+                  <a class="nav-link" href="speakers.html">Speakers</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="register.html">Register</a>
+                  <a class="nav-link" href="gallery.html">Gallery</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="venue.html">Venue</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-      <!-- End: navbar --> 
-       <div class="row text-center">
-        <!-- Title -->
-        <div class="col-md-12">
-            <h1>Inter-student Collaboration</h1>
-        </div>
-        <!-- End of title -->
+    <!-- End: navbar -->
+
+    <div class="row text-center hero p-4">
+      <div class="col-md-12">
+        <h1>Register</h1>
+        <p>
+          Every year we aim to have an unbelievable time, 
+          and this year we’d love it for you to join us. <br>
+          Conference passes only cost $99, one of the best values you’ll find.
+        </p>
+      </div>
     </div>
-    <div class=" container hero">
-        <div class="row">
-            <!-- Text -->
-            <div class="col-md-6 mb-4">
-                <h3>
-                    We are striving to become so good that they cannot ignore us. 
-                    Want to learn more about us?
-                </h3>
-                <a href="register.html">
-                    <button class="btn btn-primary bg-primary text-white">Register</button> 
-                </a>
-            </div>
-            <!-- End of text -->
-        
-            <!-- Image -->
-            <div class="col-md-6 mb-4">
-                <img 
-                    src="images/collaborate.png" 
-                    alt="Collaboration" 
-                    class="img img-fluid" 
-                    style="width: 100%; height: auto;">
-            </div>
-            <!-- End of image -->
+
+    <div class="container">
+      <div class="row myform">
+        <!-- Text -->
+        <div class="col-md-8">
+          <h3>Purchase a Conference Pass</h3>
+          <h6>$99 PER PASS</h6>
+          <p>
+            Purchase your Styles Conference pass using the form to the right. 
+            Multiple passes may be purchased within the same order, so feel 
+            free to bring a friend or two along. Once your order is finished 
+            we’ll follow up and provide a receipt for your purchase. See you soon!
+          </p>
+          <h4>Why Attend?</h4>
+          <ul>
+            <li>Over twenty world-class speakers</li>
+            <li>One full day of workshops and two full days of presentations</li>
+            <li>Hosted at The Chicago Theatre, a historical landmark</li>
+          </ul>
         </div>
+
+        <!-- Form -->
+        <div class="col-md-4">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputUsername" class="form-label">Username</label>
+              <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="usernameHelp">
+              <div id="usernameHelp" class="form-text">This is how we will identify you.</div>
+
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="phone_number" class="form-label">Phone Number</label>
+              <input type="number" class="form-control" id="phone_number">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+      </div>
     </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
